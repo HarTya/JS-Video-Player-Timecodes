@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --gray-color: #1f1f1f;
+  --gray-color-rgba: rgba(31, 31, 31, 1);
+  --gray-color-rgba-opacity: rgba(31, 31, 31, 0.9);
+  --orange-color: #fd7e14;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* videojs-custom-wrapper */
+.videoJsCustomWrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+}
+
+/* ********* VJS CUSTOM MODIFIED STYLES ********* */
+
+/* big-play-button */
+.vjs-big-play-centered .vjs-big-play-button {
+  border: none;
+  border-radius: 16px;
+  background-color: var(--gray-color);
+  line-height: 1.75em;
+  height: 1.75em;
+  opacity: 0.95;
+}
+
+.vjs-big-play-centered .vjs-big-play-button:hover {
+  background: var(--orange-color);
+  opacity: 1;
+}
+
+/* vjs-loader-spinner */
+.vjs-loading-spinner {
+  border: 6px solid var(--gray-color);
+}
+
+/* control-bar */
+.vjs-has-started .vjs-control-bar {
+  font-size: 16px;
+  background-color: var(--gray-color-rgba-opacity);
+}
+
+/* control-bar-buttons */
+.video-js .vjs-control:focus {
+  text-shadow: none;
+}
+
+/* track-display */
+.vjs-text-track-display {
+  bottom: 6em;
+}
+
+/* volume-bar */
+.video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-horizontal {
+  transition: visibility 0.4s, opacity 0.4s, height 0.4s 0.4s, width 0.4s, left 0.4s 0.4s, top 0.4s 0.4s;
+}
+
+.vjs-mouse-display .vjs-volume-tooltip {
+  background-color: var(--gray-color-rgba-opacity);
+  padding: 6px 8px;
+  font-weight: 600;
+  top: -3.25em;
+}
+
+/* progress-bar */
+.video-js .vjs-play-progress {
+  background-color: var(--orange-color);
+}
+
+.video-js .vjs-play-progress:before {
+  color: var(--orange-color);
+}
+
+.video-js .vjs-load-progress div {
+  background-color: rgba(73, 81, 88, 0.75);
+}
+
+.video-js .vjs-slider {
+  background-color: rgba(73, 81, 88, 0.5);
+}
+
+.video-js .vjs-volume-panel {
+  transition: width 0.4s;
+}
+
+.vjs-mouse-display .vjs-time-tooltip {
+  font-weight: 600;
+  top: -3.15em;
+  padding: 6px 8px;
+  background-color: var(--gray-color-rgba-opacity);
+}
+
+.video-js .vjs-progress-control:hover .vjs-mouse-display .vjs-time-tooltip {
+  display: block;
+  visibility: visible;
+}
+
+.video-js .vjs-progress-control:hover .vjs-time-tooltip {
+  display: none;
+  visibility: hidden;
+}
+
+/* progress-time */
+.video-js .vjs-time-control {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+  min-width: 0.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* progress-current-time */
+.vjs-current-time-display {
+  color: var(--orange-color);
+}
+
+/* progress-remaining-time */
+.video-js .vjs-remaining-time {
+  display: none!important;
+}
+
+/* time-speedboost-menu */
+.vjs-workinghover .vjs-menu-button-popup:hover .vjs-menu, .vjs-menu-button-popup .vjs-menu.vjs-lock-showing {
+  display: none;
+}
+
+/* vjs-error-display */
+.vjs-error .vjs-error-display .vjs-modal-dialog-content {
+  font-size: 4em;
+  color: red;
+  font-weight: 600;
+}
+
+.vjs-error .vjs-error-display:before {
+  color: red;
+  text-shadow: none;
+}
